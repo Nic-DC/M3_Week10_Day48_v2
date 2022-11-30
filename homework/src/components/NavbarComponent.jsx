@@ -3,14 +3,15 @@ import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineBell } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import avatar from "../netflix/assets/avatar.png";
+import logo from "../netflix/assets/netflix_logo.png";
 
-import logo from "../";
 const NavbarComponent = () => {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container fluid>
         <Navbar.Brand href="#home">
-          <img src="netflix_logo.png" alt="nextflix logo" id="logo" />
+          <img src={logo} alt="nextflix-logo" id="logo" />
         </Navbar.Brand>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -44,7 +45,7 @@ const NavbarComponent = () => {
           <AiOutlineBell id="navbar-text" />
           <div>
             <Button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="avatar.png" alt="avataimage" id="avatar" />
+              <img src={avatar} alt="avatar-image" id="avatar" />
             </Button>
           </div>
         </div>
